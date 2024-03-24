@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Compiled and minified JavaScript -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+
+    <title>Leventamiento de requerimientos Airbnb</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue">
+        <img class="logo-image" src="./assets/img/arbnb-small.svg" alt="logo" />
+        <a href="#" class="brand-logo">Airbnb </a>
+      </div>
+    </nav>
+    <h3 class="center-align">Obtencion requerimientos funcionales</h3>
+    <!-- contenido -->
+    <div class="row">
+      <div class="col s12 m1"></div>
+      <div class="col s12 m10">
+        <div id="top" class="container">
+          <h4 id="context">Introduccion</h4>
+          <p>
+            En respuesta a las cambiantes necesidades del mercado y el
+            crecimiento exponencial del sector de alquiler de alojamientos
+            vacacionales, se nos ha encomendado la creación de un aplicativo que
+            funcione como un clon de Airbnb. La demanda de plataformas de
+            alquiler de propiedades a corto plazo ha aumentado
+            significativamente en los últimos años, y nuestra empresa reconoce
+            la oportunidad de capitalizar este mercado en expansión. El objetivo
+            principal de este proyecto es desarrollar una aplicación que permita
+            a los usuarios buscar, reservar y gestionar alojamientos temporales
+            de manera eficiente y segura. El aplicativo debe ofrecer una
+            interfaz intuitiva y atractiva tanto para los anfitriones que desean
+            alquilar sus propiedades como para los huéspedes que buscan opciones
+            de alojamiento. Para garantizar la funcionalidad y la experiencia
+            del usuario, el aplicativo deberá incluir características clave
+            presentes en Airbnb, como la capacidad de búsqueda avanzada con
+            filtros personalizados, perfiles de usuarios, sistema de reservas y
+            pagos integrado, sistema de calificaciones y reseñas, mensajería
+            instantánea entre huéspedes y anfitriones, y un panel de control
+            para la administración de las propiedades. Además, se espera que el
+            aplicativo cumpla con altos estándares de seguridad y privacidad de
+            datos para proteger la información personal y financiera de los
+            usuarios. La escalabilidad y la capacidad de adaptación a futuras
+            actualizaciones y mejoras también son aspectos cruciales a tener en
+            cuenta durante el desarrollo.
+          </p>
+          <h4 id="stakeholders">Stakeholders</h4>
+          <ul>
+            <li>Anfitriones</li>
+            <li>Huéspedes</li>
+            <li>Clientes y/o inversionistas</li>
+            <li>Entidades reguladoras(nivel internacional)</li>
+          </ul>
+          <h4 id="getData">Obtencion de datos</h4>
+          <p>
+            Para la obtencion de datos la tecnica utilizada con todos los
+            stakeholders fue la encuesta\questionario
+          </p>
+
+          <h5>Para los anfitriones</h5>
+          <p>
+            ¿Actualmente ofrece alquiler de alojamientos a través de plataformas
+            en línea como Airbnb u otras similares? (Sí / No)
+          </p>
+          <p>
+            En caso afirmativo, ¿cuánto tiempo ha estado utilizando este tipo de
+            plataformas para alquilar su propiedad?
+          </p>
+          <p>
+            ¿Qué tipo de propiedad o alojamiento ofrece para alquiler? (Casa
+            completa, Apartamento, Habitación privada, Habitación compartida,
+            Otro - Por favor, especifique)
+          </p>
+          <p>
+            ¿Cuál es la ubicación de su propiedad para alquilar? (Ciudad, Zona
+            rural, Playa, Montaña, Otro - Por favor, especifique)
+          </p>
+          <p>
+            ¿Qué características considera más importantes al utilizar una
+            plataforma de alquiler de alojamientos? (Por favor, enumere en orden
+            de importancia)
+          </p>
+
+          <p>
+            ¿Qué desafíos ha enfrentado al alquilar su propiedad a través de
+            plataformas en línea? (Por favor, describa con detalle)
+          </p>
+
+          <p>
+            ¿Qué características adicionales le gustaría ver en una nueva
+            plataforma de alquiler de alojamientos? (Por favor, describa con
+            detalle)
+          </p>
+          <p>
+            ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
+            características similares a las de Airbnb pero con algunas mejoras
+            adicionales? (Sí / No / Quizás)
+          </p>
+
+          <h5>Para los huespédes</h5>
+
+          <p>¿Con qué frecuencia reserva alojamientos para sus viajes?</p>
+          <ul>
+            <li>Regularmente</li>
+            <li>Ocasionalmente</li>
+            <li>Raramente</li>
+          </ul>
+
+          <p>
+            ¿Qué tipo de alojamiento acostumbra utilizar al viajar? (Hotel,
+            Casa/apartamento completo, Habitación privada, Habitación
+            compartida)
+          </p>
+
+          <p>
+            ¿Qué tipo de ubicación acostumbra utilizar para su alojamiento
+            cuando viaja? (Ciudad, Zona rural, Playa, Montaña, Otro - Por favor,
+            especifique)
+          </p>
+
+          <p>
+            ¿Qué tipos de servicios y/o características considera más
+            importantes al seleccionar un alojamiento vacacional? (Por favor,
+            enumere en orden de importancia. Ejemplo: Aire acondicionado)
+          </p>
+
+          <p>
+            ¿Ha tenido alguna experiencia negativa al reservar alojamientos a
+            través de plataformas en línea? En caso afirmativo, ¿podría
+            describir brevemente cuál fue el problema?
+          </p>
+
+          <p>
+            ¿Qué características adicionales le gustaría ver en una nueva
+            plataforma de alquiler de alojamientos? (Por favor, describa con
+            detalle)
+          </p>
+
+          <p>
+            ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
+            características similares a las de Airbnb pero con algunas mejoras
+            adicionales? (Sí / No / Quizás)
+          </p>
+
+          <h5>Clientes</h5>
+
+          <p>
+            ¿Cuál es el objetivo principal que busca alcanzar con la creación de
+            este aplicativo de alquiler de alojamientos?
+          </p>
+
+          <p>
+            ¿Cuáles son las principales necesidades o problemas que espera
+            resolver con este aplicativo?
+          </p>
+
+          <p>
+            ¿Quiénes serán los principales usuarios del aplicativo?
+            (Anfitriones, Huéspedes, Administradores, Otros - Por favor,
+            especifique)
+          </p>
+
+          <p>
+            ¿Qué funcionalidades considera imprescindibles para el éxito del
+            aplicativo? (Por favor, enumere en orden de prioridad)
+          </p>
+
+          <p>
+            ¿En qué regiones, países, etc.. desean que el aplicativo funcione?
+          </p>
+          <p>
+            ¿Cómo desea que se registren e inicien sesión los usuarios?(usuario
+            y contraseña, cuenta gmail,facebook, etc..)
+          </p>
+
+          <p>
+            ¿Hay algún requerimiento específico que desee destacar o que
+            considere crucial para el proyecto?
+          </p>
+
+          <p>
+            ¿Tiene alguna expectativa particular en cuanto al desempeño del
+            aplicativo? (Tiempo de respuesta, Escalabilidad, Seguridad, etc.)
+          </p>
+
+          <p>
+            ¿Existen sistemas o plataformas con los cuales este aplicativo
+            necesitará integrarse? (Sistemas de pago, APIs de terceros, etc.)
+          </p>
+
+          <p>
+            ¿Hay restricciones o limitaciones técnicas, presupuestarias ,
+            temporales o de otra índole que debamos tener en cuenta durante el
+            desarrollo del proyecto?
+          </p>
+
+          <p>
+            ¿Tiene una visión a largo plazo para este aplicativo? ¿Hay
+            funcionalidades o mejoras adicionales que espera implementar en
+            futuras iteraciones?
+          </p>
+
+          <h5>Entidades reguladoras (nivel internacional)</h5>
+
+          <p>
+            NOTAS:Para responder a estas preguntas, tenga en cuenta los
+            territorios en los cuales el aplicativo funcionará.
+          </p>
+          <p>
+            ¿Podría proporcionar una visión general de las regulaciones
+            internacionales pertinentes aplicadas a los territorios en los
+            cuales funcionará la aplicación para plataformas de alquiler de
+            alojamientos?
+          </p>
+
+          <p>
+            ¿Qué medidas regulatorias existen para garantizar la protección y
+            seguridad de los consumidores que utilizan plataformas de alquiler
+            de alojamientos?
+          </p>
+
+          <p>
+            ¿Cuáles son las regulaciones específicas relacionadas con la
+            privacidad y protección de datos de los usuarios en el contexto de
+            aplicativos de alquiler de alojamientos?
+          </p>
+
+          <p>
+            ¿Qué requisitos de seguridad y cumplimiento normativo deben tener en
+            cuenta los aplicativos de alquiler de alojamientos para operar a
+            nivel internacional?
+          </p>
+
+          <p>
+            ¿Qué tipo de información o reportes se espera que las plataformas de
+            alquiler de alojamientos vacacionales proporcionen a las autoridades
+            regulatorias?
+          </p>
+
+          <h5>Recomendaciones o Sugerencias:</h5>
+          <p>
+            ¿Tiene alguna recomendación o sugerencia específica para el
+            desarrollo de este aplicativo que pueda contribuir al cumplimiento
+            de las regulaciones internacionales?
+          </p>
+
+          <h4 id="requirements">Requerimientos</h4>
+          <table class="striped highlight responsive-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Descripcion</th>
+                <th>Tipo</th>
+                <th>Prioridad</th>
+                <th>Criterio de aceptación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>REQ001</td>
+                <td>
+                  Permitir a los usuarios registrarse en la plataforma
+                  proporcionando información básica como nombre, correo
+                  electrónico y contraseña.
+                </td>
+                <td>funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ002</td>
+                <td>
+                  Permitir a los usuarios buscar propiedades disponibles para
+                  alquilar utilizando filtros como ubicación, fechas, precio y
+                  tipo de propiedad.
+                </td>
+                <td>funcional</td>
+                <td>baja</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ003</td>
+                <td>
+                  Permitir a los usuarios reservar propiedades seleccionadas
+                  proporcionando detalles de reserva.
+                </td>
+                <td>funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ004</td>
+                <td>
+                  Permitir a los usuarios gestionar su perfil, incluida la
+                  información personal, las preferencias de viaje y las reservas
+                  pasadas.
+                </td>
+                <td>funcional</td>
+                <td>baja</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ005</td>
+                <td>
+                  Proporcionar un chat interno de mensajería para que los
+                  anfitriones y los huéspedes autenticados se comuniquen antes,
+                  durante y después de la estancia.
+                </td>
+                <td>funcional</td>
+                <td>baja</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ006</td>
+                <td>
+                  Permitir a los anfitriones gestionar las reservas recibidas,
+                  incluida la confirmación, cancelación y modificación de
+                  reservas.
+                </td>
+                <td>funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ007</td>
+                <td>
+                  Permitir a los usuarios calificar y dejar comentarios sobre
+                  propiedades y experiencias de alojamiento.
+                </td>
+                <td>funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ008</td>
+                <td>
+                  Utilizar algoritmos de recomendación para sugerir propiedades
+                  y experiencias relevantes a los usuarios según sus
+                  preferencias y comportamiento pasado.
+                </td>
+                <td>funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ009</td>
+                <td>
+                  Permitir a los usuarios verificar su identidad mediante
+                  métodos como verificación de correo electrónico, número de
+                  teléfono o documentos de identificación.
+                </td>
+                <td>funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ010</td>
+                <td>
+                  Permitir a los anfitriones gestionar la disponibilidad de sus
+                  propiedades mediante un calendario integrado.
+                </td>
+                <td>funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ011</td>
+                <td>
+                  Proporcionar un formulario de contacto para que los usuarios
+                  (anfitriones u hospedados) puedan iniciar una reclamación por
+                  daño en la propiedad.
+                </td>
+                <td>funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ012</td>
+                <td>
+                  Permitir a los usuarios compartir contenido de Airbnb en redes
+                  sociales como Facebook, Twitter e Instagram.
+                </td>
+                <td>funcional</td>
+                <td>baja</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ013</td>
+                <td>
+                  Garantizar la seguridad de los datos de los usuarios y las
+                  transacciones realizadas en la plataforma.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ014</td>
+                <td>
+                  Garantizar que la plataforma pueda manejar un gran número de
+                  usuarios y transacciones simultáneas sin degradación del
+                  rendimiento.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ015</td>
+                <td>
+                  Garantizar que la plataforma esté disponible y funcione
+                  correctamente las 24 horas del día, los 7 días de la semana.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ016</td>
+                <td>
+                  Garantizar que la plataforma sea confiable y que minimice el
+                  tiempo de inactividad y los errores, un 99,9% al año.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ017</td>
+                <td>
+                  Diseñar la plataforma de manera que sea fácil de usar y
+                  navegar para usuarios de diferentes niveles de habilidad.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td>
+                  Los colores y el contraste deben ser suficientes para que toda
+                  clase de usuarios puedan leer la información que muestre el
+                  sistema, sin lugar a equivocaciones
+                </td>
+              </tr>
+              <tr>
+                <td>REQ018</td>
+                <td>
+                  Garantizar tiempos de carga rápidos y una respuesta rápida a
+                  las solicitudes de los usuarios.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ019</td>
+                <td>
+                  Garantizar que la plataforma sea compatible con una amplia
+                  variedad de dispositivos y navegadores web.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ020</td>
+                <td>
+                  Cumplir con las regulaciones y estándares legales y de la
+                  industria relacionados con la protección de datos y los
+                  derechos del consumidor.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ021</td>
+                <td>
+                  Garantizar la privacidad y la protección de los datos
+                  personales de los usuarios de acuerdo con las leyes de
+                  privacidad aplicables.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ022</td>
+                <td>
+                  Diseñar la plataforma para ser adaptable a diferentes
+                  culturas, idiomas y normas regionales.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ023</td>
+                <td>
+                  Permitir a los usuarios personalizar su experiencia en la
+                  plataforma según sus preferencias y necesidades individuales.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ024</td>
+                <td>
+                  Garantizar que la plataforma pueda integrarse fácilmente con
+                  otros sistemas y servicios externos.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ025</td>
+                <td>
+                  Proporcionar documentación detallada y recursos de ayuda para
+                  usuarios y desarrolladores que utilicen la plataforma.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ026</td>
+                <td>
+                  Garantizar actualizaciones regulares y mantenimiento de la
+                  plataforma para corregir errores, mejorar la funcionalidad y
+                  agregar nuevas características.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ027</td>
+                <td>
+                  Proporcionar recursos y herramientas para ayudar a los
+                  anfitriones a gestionar sus propiedades y ofrecer una
+                  excelente experiencia a los huéspedes.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td>cursos, tutoriales…</td>
+              </tr>
+              <tr>
+                <td>REQ028</td>
+                <td>
+                  Proporcionar un sistema de pago seguro que permita a los
+                  usuarios realizar pagos por las reservas realizadas.
+                </td>
+                <td>no funcional</td>
+                <td>alta</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ029</td>
+                <td>
+                  Ofrecer un servicio de atención al cliente dedicado para
+                  ayudar a los usuarios con consultas, problemas y asistencia
+                  general.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>REQ030</td>
+                <td>
+                  Ofrecer soporte multilingüe para que los usuarios puedan
+                  acceder y utilizar la plataforma en varios idiomas.
+                </td>
+                <td>no funcional</td>
+                <td>media</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col s12 m1">
+        <aside
+          class="col s12 m12 hide-on-small-only black-text hoverable grey lighten-3"
+        >
+          <ul class="table-of-contents">
+            <li><a href="#context" class="active">Contexto</a></li>
+            <li><a href="#stakeholders">StakeHolders</a></li>
+            <li><a href="#getData">Obtencion de datos</a></li>
+            <li><a href="#requirements">Requerimientos</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" href="#top">
+          <i class="large material-icons">arrow_upward</i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
