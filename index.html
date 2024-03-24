@@ -19,6 +19,10 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <title>Leventamiento de requerimientos Airbnb</title>
   </head>
@@ -29,13 +33,20 @@
         <a href="#" class="brand-logo">Airbnb </a>
       </div>
     </nav>
-    <h3 class="center-align">Obtencion requerimientos funcionales</h3>
+    <h3
+      class="center-align animate__animated animate__fadeIn animate__slower animate__slow"
+    >
+      Obtencion requerimientos funcionales
+    </h3>
     <!-- contenido -->
-    <div class="row">
+    <div
+      id="top"
+      class="row animate__animated animate__zoomIn animate__slower animate__slow animate__delay"
+    >
       <div class="col s12 m1"></div>
       <div class="col s12 m10">
-        <div id="top" class="container">
-          <h4 id="context">Introduccion</h4>
+        <div class="container">
+          <h4 id="context">Introducción</h4>
           <p>
             En respuesta a las cambiantes necesidades del mercado y el
             crecimiento exponencial del sector de alquiler de alojamientos
@@ -62,206 +73,274 @@
             actualizaciones y mejoras también son aspectos cruciales a tener en
             cuenta durante el desarrollo.
           </p>
-          <h4 id="stakeholders">Stakeholders</h4>
-          <ul>
-            <li>Anfitriones</li>
-            <li>Huéspedes</li>
-            <li>Clientes y/o inversionistas</li>
-            <li>Entidades reguladoras(nivel internacional)</li>
-          </ul>
+          <div class="container-stakeholders">
+            <div class="row">
+              <div class="col s12 m6">
+                <h4 id="stakeholders">Stakeholders</h4>
+                <ul>
+                  <li>Anfitriones</li>
+                  <li>Huéspedes</li>
+                  <li>Clientes y/o inversionistas</li>
+                  <li>Entidades reguladoras(nivel internacional)</li>
+                </ul>
+              </div>
+              <div class="col s12 m6 valign-wrapper">
+                <img
+                  src="./assets/img/stakeholder.png"
+                  class="responsive-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
           <h4 id="getData">Obtencion de datos</h4>
           <p>
             Para la obtencion de datos la tecnica utilizada con todos los
             stakeholders fue la encuesta\questionario
           </p>
 
-          <h5>Para los anfitriones</h5>
-          <p>
-            ¿Actualmente ofrece alquiler de alojamientos a través de plataformas
-            en línea como Airbnb u otras similares? (Sí / No)
-          </p>
-          <p>
-            En caso afirmativo, ¿cuánto tiempo ha estado utilizando este tipo de
-            plataformas para alquilar su propiedad?
-          </p>
-          <p>
-            ¿Qué tipo de propiedad o alojamiento ofrece para alquiler? (Casa
-            completa, Apartamento, Habitación privada, Habitación compartida,
-            Otro - Por favor, especifique)
-          </p>
-          <p>
-            ¿Cuál es la ubicación de su propiedad para alquilar? (Ciudad, Zona
-            rural, Playa, Montaña, Otro - Por favor, especifique)
-          </p>
-          <p>
-            ¿Qué características considera más importantes al utilizar una
-            plataforma de alquiler de alojamientos? (Por favor, enumere en orden
-            de importancia)
-          </p>
+          <div class="row">
+            <div class="col s12 m6 valign-wrapper">
+              <img src="./assets/img/host.jpeg" class="responsive-img" alt="" />
+            </div>
 
-          <p>
-            ¿Qué desafíos ha enfrentado al alquilar su propiedad a través de
-            plataformas en línea? (Por favor, describa con detalle)
-          </p>
+            <div class="col s12 m6">
+              <h5>Para los anfitriones</h5>
+              <p>
+                ¿Actualmente ofrece alquiler de alojamientos a través de
+                plataformas en línea como Airbnb u otras similares? (Sí / No)
+              </p>
+              <p>
+                En caso afirmativo, ¿cuánto tiempo ha estado utilizando este
+                tipo de plataformas para alquilar su propiedad?
+              </p>
+              <p>
+                ¿Qué tipo de propiedad o alojamiento ofrece para alquiler? (Casa
+                completa, Apartamento, Habitación privada, Habitación
+                compartida, Otro - Por favor, especifique)
+              </p>
+              <p>
+                ¿Cuál es la ubicación de su propiedad para alquilar? (Ciudad,
+                Zona rural, Playa, Montaña, Otro - Por favor, especifique)
+              </p>
+              <p>
+                ¿Qué características considera más importantes al utilizar una
+                plataforma de alquiler de alojamientos? (Por favor, enumere en
+                orden de importancia)
+              </p>
 
-          <p>
-            ¿Qué características adicionales le gustaría ver en una nueva
-            plataforma de alquiler de alojamientos? (Por favor, describa con
-            detalle)
-          </p>
-          <p>
-            ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
-            características similares a las de Airbnb pero con algunas mejoras
-            adicionales? (Sí / No / Quizás)
-          </p>
+              <p>
+                ¿Qué desafíos ha enfrentado al alquilar su propiedad a través de
+                plataformas en línea? (Por favor, describa con detalle)
+              </p>
 
-          <h5>Para los huespédes</h5>
+              <p>
+                ¿Qué características adicionales le gustaría ver en una nueva
+                plataforma de alquiler de alojamientos? (Por favor, describa con
+                detalle)
+              </p>
+              <p>
+                ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
+                características similares a las de Airbnb pero con algunas
+                mejoras adicionales? (Sí / No / Quizás)
+              </p>
+            </div>
+          </div>
 
-          <p>¿Con qué frecuencia reserva alojamientos para sus viajes?</p>
-          <ul>
-            <li>Regularmente</li>
-            <li>Ocasionalmente</li>
-            <li>Raramente</li>
-          </ul>
+          <div class="row">
+            <div class="col s12 m6">
+              <h5>Para los huespédes</h5>
 
-          <p>
-            ¿Qué tipo de alojamiento acostumbra utilizar al viajar? (Hotel,
-            Casa/apartamento completo, Habitación privada, Habitación
-            compartida)
-          </p>
+              <p>¿Con qué frecuencia reserva alojamientos para sus viajes?</p>
+              <ul>
+                <li>Regularmente</li>
+                <li>Ocasionalmente</li>
+                <li>Raramente</li>
+              </ul>
 
-          <p>
-            ¿Qué tipo de ubicación acostumbra utilizar para su alojamiento
-            cuando viaja? (Ciudad, Zona rural, Playa, Montaña, Otro - Por favor,
-            especifique)
-          </p>
+              <p>
+                ¿Qué tipo de alojamiento acostumbra utilizar al viajar? (Hotel,
+                Casa/apartamento completo, Habitación privada, Habitación
+                compartida)
+              </p>
 
-          <p>
-            ¿Qué tipos de servicios y/o características considera más
-            importantes al seleccionar un alojamiento vacacional? (Por favor,
-            enumere en orden de importancia. Ejemplo: Aire acondicionado)
-          </p>
+              <p>
+                ¿Qué tipo de ubicación acostumbra utilizar para su alojamiento
+                cuando viaja? (Ciudad, Zona rural, Playa, Montaña, Otro - Por
+                favor, especifique)
+              </p>
 
-          <p>
-            ¿Ha tenido alguna experiencia negativa al reservar alojamientos a
-            través de plataformas en línea? En caso afirmativo, ¿podría
-            describir brevemente cuál fue el problema?
-          </p>
+              <p>
+                ¿Qué tipos de servicios y/o características considera más
+                importantes al seleccionar un alojamiento vacacional? (Por
+                favor, enumere en orden de importancia. Ejemplo: Aire
+                acondicionado)
+              </p>
 
-          <p>
-            ¿Qué características adicionales le gustaría ver en una nueva
-            plataforma de alquiler de alojamientos? (Por favor, describa con
-            detalle)
-          </p>
+              <p>
+                ¿Ha tenido alguna experiencia negativa al reservar alojamientos
+                a través de plataformas en línea? En caso afirmativo, ¿podría
+                describir brevemente cuál fue el problema?
+              </p>
 
-          <p>
-            ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
-            características similares a las de Airbnb pero con algunas mejoras
-            adicionales? (Sí / No / Quizás)
-          </p>
+              <p>
+                ¿Qué características adicionales le gustaría ver en una nueva
+                plataforma de alquiler de alojamientos? (Por favor, describa con
+                detalle)
+              </p>
 
-          <h5>Clientes</h5>
+              <p>
+                ¿Estaría interesado en utilizar una nueva plataforma que ofrezca
+                características similares a las de Airbnb pero con algunas
+                mejoras adicionales? (Sí / No / Quizás)
+              </p>
+            </div>
+            <div class="col s12 m6">
+              <img
+                src="./assets/img/guest.jpeg"
+                class="responsive-img"
+                alt=""
+              />
+            </div>
+          </div>
 
-          <p>
-            ¿Cuál es el objetivo principal que busca alcanzar con la creación de
-            este aplicativo de alquiler de alojamientos?
-          </p>
+          <div class="row">
+            <div class="col s12 m6">
+              <img
+                src="./assets/img/customers.jpeg"
+                class="responsive-img"
+                alt=""
+              />
+            </div>
+            <div class="col s12 m6">
+              <h5>Clientes</h5>
 
-          <p>
-            ¿Cuáles son las principales necesidades o problemas que espera
-            resolver con este aplicativo?
-          </p>
+              <p>
+                ¿Cuál es el objetivo principal que busca alcanzar con la
+                creación de este aplicativo de alquiler de alojamientos?
+              </p>
 
-          <p>
-            ¿Quiénes serán los principales usuarios del aplicativo?
-            (Anfitriones, Huéspedes, Administradores, Otros - Por favor,
-            especifique)
-          </p>
+              <p>
+                ¿Cuáles son las principales necesidades o problemas que espera
+                resolver con este aplicativo?
+              </p>
 
-          <p>
-            ¿Qué funcionalidades considera imprescindibles para el éxito del
-            aplicativo? (Por favor, enumere en orden de prioridad)
-          </p>
+              <p>
+                ¿Quiénes serán los principales usuarios del aplicativo?
+                (Anfitriones, Huéspedes, Administradores, Otros - Por favor,
+                especifique)
+              </p>
 
-          <p>
-            ¿En qué regiones, países, etc.. desean que el aplicativo funcione?
-          </p>
-          <p>
-            ¿Cómo desea que se registren e inicien sesión los usuarios?(usuario
-            y contraseña, cuenta gmail,facebook, etc..)
-          </p>
+              <p>
+                ¿Qué funcionalidades considera imprescindibles para el éxito del
+                aplicativo? (Por favor, enumere en orden de prioridad)
+              </p>
 
-          <p>
-            ¿Hay algún requerimiento específico que desee destacar o que
-            considere crucial para el proyecto?
-          </p>
+              <p>
+                ¿En qué regiones, países, etc.. desean que el aplicativo
+                funcione?
+              </p>
+              <p>
+                ¿Cómo desea que se registren e inicien sesión los
+                usuarios?(usuario y contraseña, cuenta gmail,facebook, etc..)
+              </p>
 
-          <p>
-            ¿Tiene alguna expectativa particular en cuanto al desempeño del
-            aplicativo? (Tiempo de respuesta, Escalabilidad, Seguridad, etc.)
-          </p>
+              <p>
+                ¿Hay algún requerimiento específico que desee destacar o que
+                considere crucial para el proyecto?
+              </p>
 
-          <p>
-            ¿Existen sistemas o plataformas con los cuales este aplicativo
-            necesitará integrarse? (Sistemas de pago, APIs de terceros, etc.)
-          </p>
+              <p>
+                ¿Tiene alguna expectativa particular en cuanto al desempeño del
+                aplicativo? (Tiempo de respuesta, Escalabilidad, Seguridad,
+                etc.)
+              </p>
 
-          <p>
-            ¿Hay restricciones o limitaciones técnicas, presupuestarias ,
-            temporales o de otra índole que debamos tener en cuenta durante el
-            desarrollo del proyecto?
-          </p>
+              <p>
+                ¿Existen sistemas o plataformas con los cuales este aplicativo
+                necesitará integrarse? (Sistemas de pago, APIs de terceros,
+                etc.)
+              </p>
 
-          <p>
-            ¿Tiene una visión a largo plazo para este aplicativo? ¿Hay
-            funcionalidades o mejoras adicionales que espera implementar en
-            futuras iteraciones?
-          </p>
+              <p>
+                ¿Hay restricciones o limitaciones técnicas, presupuestarias ,
+                temporales o de otra índole que debamos tener en cuenta durante
+                el desarrollo del proyecto?
+              </p>
 
-          <h5>Entidades reguladoras (nivel internacional)</h5>
+              <p>
+                ¿Tiene una visión a largo plazo para este aplicativo? ¿Hay
+                funcionalidades o mejoras adicionales que espera implementar en
+                futuras iteraciones?
+              </p>
+            </div>
+          </div>
 
-          <p>
-            NOTAS:Para responder a estas preguntas, tenga en cuenta los
-            territorios en los cuales el aplicativo funcionará.
-          </p>
-          <p>
-            ¿Podría proporcionar una visión general de las regulaciones
-            internacionales pertinentes aplicadas a los territorios en los
-            cuales funcionará la aplicación para plataformas de alquiler de
-            alojamientos?
-          </p>
+          <div class="row">
+            <div class="col s12 m6">
+              <h5>Entidades reguladoras (nivel internacional)</h5>
 
-          <p>
-            ¿Qué medidas regulatorias existen para garantizar la protección y
-            seguridad de los consumidores que utilizan plataformas de alquiler
-            de alojamientos?
-          </p>
+              <p>
+                NOTAS:Para responder a estas preguntas, tenga en cuenta los
+                territorios en los cuales el aplicativo funcionará.
+              </p>
+              <p>
+                ¿Podría proporcionar una visión general de las regulaciones
+                internacionales pertinentes aplicadas a los territorios en los
+                cuales funcionará la aplicación para plataformas de alquiler de
+                alojamientos?
+              </p>
 
-          <p>
-            ¿Cuáles son las regulaciones específicas relacionadas con la
-            privacidad y protección de datos de los usuarios en el contexto de
-            aplicativos de alquiler de alojamientos?
-          </p>
+              <p>
+                ¿Qué medidas regulatorias existen para garantizar la protección
+                y seguridad de los consumidores que utilizan plataformas de
+                alquiler de alojamientos?
+              </p>
 
-          <p>
-            ¿Qué requisitos de seguridad y cumplimiento normativo deben tener en
-            cuenta los aplicativos de alquiler de alojamientos para operar a
-            nivel internacional?
-          </p>
+              <p>
+                ¿Cuáles son las regulaciones específicas relacionadas con la
+                privacidad y protección de datos de los usuarios en el contexto
+                de aplicativos de alquiler de alojamientos?
+              </p>
 
-          <p>
-            ¿Qué tipo de información o reportes se espera que las plataformas de
-            alquiler de alojamientos vacacionales proporcionen a las autoridades
-            regulatorias?
-          </p>
+              <p>
+                ¿Qué requisitos de seguridad y cumplimiento normativo deben
+                tener en cuenta los aplicativos de alquiler de alojamientos para
+                operar a nivel internacional?
+              </p>
 
-          <h5>Recomendaciones o Sugerencias:</h5>
-          <p>
-            ¿Tiene alguna recomendación o sugerencia específica para el
-            desarrollo de este aplicativo que pueda contribuir al cumplimiento
-            de las regulaciones internacionales?
-          </p>
+              <p>
+                ¿Qué tipo de información o reportes se espera que las
+                plataformas de alquiler de alojamientos vacacionales
+                proporcionen a las autoridades regulatorias?
+              </p>
+            </div>
+            <div class="col s12 m6">
+              <img
+                src="./assets/img/regulatory.jpeg"
+                class="responsive-img"
+                alt=""
+              />
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card blue-grey lighten-4 hoverable">
+                <div class="card-content black-text">
+                  <span class="card-title">
+                    <h6>Recomendaciones o Sugerencias:</h6>
+                  </span>
+                  <p>
+                    ¿Tiene alguna recomendación o sugerencia específica para el
+                    desarrollo de este aplicativo que pueda contribuir al
+                    cumplimiento de las regulaciones internacionales?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <h4 id="requirements">Requerimientos</h4>
           <table class="striped highlight responsive-table">
             <thead>
@@ -270,7 +349,6 @@
                 <th>Descripcion</th>
                 <th>Tipo</th>
                 <th>Prioridad</th>
-                <!-- <th>Criterio de aceptación</th> -->
               </tr>
             </thead>
             <tbody>
@@ -570,19 +648,24 @@
           class="col s12 m12 hide-on-small-only black-text hoverable grey lighten-3"
         >
           <ul class="table-of-contents">
-            <li><a href="#context" class="active">Contexto</a></li>
+            <li><a href="#context" class="active">Introduccion</a></li>
             <li><a href="#stakeholders">StakeHolders</a></li>
             <li><a href="#getData">Obtencion de datos</a></li>
             <li><a href="#requirements">Requerimientos</a></li>
           </ul>
         </aside>
       </div>
+    </div>
 
-      <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red" href="#top">
-          <i class="large material-icons">arrow_upward</i>
-        </a>
-      </div>
+    <div class="fixed-action-btn">
+      <a
+        class="btn-floating btn-large red tooltipped"
+        data-position="left"
+        data-tooltip="Volver al inicio"
+        href="#top"
+      >
+        <i class="large material-icons">arrow_upward</i>
+      </a>
     </div>
   </body>
 </html>

@@ -6,3 +6,17 @@
 .container {
     text-align: justify;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+img {
+    padding: 10px;
+}

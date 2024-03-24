@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// parallax effect
+// tooltip
 document.addEventListener('DOMContentLoaded', function () {
-    elems = document.querySelectorAll('.parallax');
-    instances = M.Parallax.init(elems, {
+    elems = document.querySelectorAll('.tooltipped');
+    instances = M.Tooltip.init(elems, {
 
     });
 });
